@@ -1,0 +1,74 @@
+*,*:before, *:after{
+ box-sizing: border-box;
+}
+
+body{
+ margin: 0;
+ background-color: white;
+ font-family: 'IBM Plex Mono', monospace;
+
+
+}
+
+.container {
+ width: 1200px;
+ margin: 0 auto;
+}
+
+/* Header start */
+.header{
+ background-color: #449A68;
+}
+
+.header__wrapper{
+ height: 50px;
+ display: flex;
+ justify-content:space-between;
+ align-items: center;
+}
+
+.nav{
+position: relative;
+ left: 20px;
+}
+/* Header end */
+
+.intro{
+ background: rgb(255, 255, 255);
+  margin: 0 auto;
+  padding: 0px 0px;
+    width: 100%;
+   min-width: 860px;
+   height: 90%;
+   min-height: 540px;
+ 
+}
+
+.field{
+display: flex;
+justify-content: right;
+flex-direction: row;
+margin-bottom: 200px;
+padding-top: 4px;
+
+}
+
+button {
+ background-color: transparent;
+ background-repeat: no-repeat;
+ border: none;
+ cursor: pointer;
+ overflow: hidden;
+ outline: none;
+ vertical-align: middle;
+ flex-direction: row;
+ box-sizing: border-box;
+}
+
+canvas{
+ 
+ box-shadow: -3px 2px 9px 3px black;
+ cursor: pointer;
+
+
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Whiteboard</title>
+ <link rel="stylesheet" href="login-page.css">
+ <script defer src="login-page.js"></script>
+</head>
+
+<body>
+ <div class="hero">
+  <h1 id="header">Добро пожаловать в мир досок!</h1>
+  <div class="form-box">
+   <div class="button-box">
+    <div id="btn"></div>
+    <button type="button" class="toggle-btn" onclick="login()">Вход</button>
+    <button type="button" class="toggle-btn" onclick="register()">Регистрация</button>
+   </div>
+
+   <form id="login" class="input-group">
+    <input type="text" class="input-field" placeholder="Имя пользователя" required>
+    <input type="text" class="input-field" placeholder="Пароль" required>
+    <input type="checkbox" class="checkbox"><span>Запомнить пароль</span>
+    <button type="submit" class="submit-btn" formaction=" doska.html"> Вход</button>
+   </form>
+   <form id="register" class="input-group">
+    <input type="text" class="input-field" placeholder="Имя пользователя" required>
+    <input type="text" class="input-field" placeholder="Пароль" required>
+    <input type="text" class="input-field" placeholder="Email" required>
+    <button type="submit" class="submit-btn">Регистрация</button>
+   </form>
+  </div>
+ </div>
+
+ <script>
+
+  var x = document.getElementById("login")
+  var y = document.getElementById("register")
+  var z = document.getElementById("btn")
+
+  function register() {
+   x.style.left = "-450px"
+   y.style.left = "50px"
+   z.style.left = "110px"
+  }
+
+  function login() {
+   x.style.left = "50px"
+   y.style.left = "450px"
+   z.style.left = "0px"
+  }
+
+ </script>
+
+</body>
+
+</html>
